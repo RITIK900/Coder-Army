@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 1</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap"
+        rel="stylesheet"
+        />
+        <lin  k rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!--**************************************NavBar Starts***************************************-->
+
+    <header class="text-gray-600 body-font">
+        <div
+          class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+        >
+          <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+            <a
+              class="mr-5 hover:text-gray-900 shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30 hover:bg-blue-50 hover:text-grey-900"
+              target="_blank"
+              href="https://youtube.com/playlist?list=PLQEaRBV9gAFu4ovJ41PywklqI7IyXwr01&si=8C3KTBMLWr7_t73P"
+              >Youtube Playlist</a
+            >
+          </nav>
+          <a
+            class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
+            href=""
+          >
+            <!--svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">Coder Army</span-->
+            <img src="../img/logo.png" />
+          </a>
+          <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+            <a
+              class="mr-5 hover:text-gray-900 shadow-none transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/30 hover:bg-blue-50 hover:text-grey-900"
+              target="_blank"
+              href="https://www.CoderArmy.in"
+              >Official Website</a
+            >
+          </div>
+        </div>
+      </header>
+  
+      <!--**************************************NavBar Ends***************************************-->
+
+      <hr style="border-color: black" />
+      
+      <!--***************************Questions & Code - Section Starts***********************************-->
+
+     
+
+    <pre>
+        <code class="language-cpp border-red-200">
+            #include <iostream>
+
+            int main() {
+                std::cout << "Hello, world!" << std::endl;
+                return 0;
+            }
+        </code>
+    </pre>
+
+    <pre class="bg-black p-4 border-white border">
+      <code class="language-cpp text-white">
+          #include <iostream>
+
+          int main() {
+              std::cout << "Hello, world!" << std::endl;
+              return 0;
+          }
+      </code>
+  </pre>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script> -->
+
+    <pre>
+        <code class="language-cpp">
+            #include <iostream>
+
+            int main() {
+                std::cout << "Hello, world!" << std::endl;
+                return 0;
+            }
+        </code>
+    </pre>
+
+    <!-- Add a "Copy" button -->
+    <button id="copyButton">Copy Code</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script>
+        // Function to copy code to clipboard
+        function copyCodeToClipboard() {
+            const codeElement = document.querySelector('code');
+            const textArea = document.createElement('textarea');
+            textArea.value = codeElement.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+        }
+
+        // Add a click event listener to the "Copy" button
+        const copyButton = document.getElementById('copyButton');
+        copyButton.addEventListener('click', copyCodeToClipboard);
+    </script>
+
+
+
+      <!--***************************Questions & Code - Section Ends*************************************-->
+  
+</body>
+</html>
